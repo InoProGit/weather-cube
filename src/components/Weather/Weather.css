@@ -1,0 +1,41 @@
+.all-days::-webkit-scrollbar {
+  width: 12px;
+}
+
+.all-days::-webkit-scrollbar-track {
+  background: gray;
+  border-radius: 20px;
+}
+
+.all-days::-webkit-scrollbar-thumb {
+  background-color: black;
+  border-radius: 20px;
+  border: 1px solid white;
+}
+
+.weather-block {
+  position: relative;
+  max-width: var(--width);
+}
+
+.animation {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  transition: transform 0.3s ease-in-out;
+  max-width: var(--width);
+  max-height: var(--height);
+}
+
+.days-wrapper {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  position: relative;
+}
+
+.all-days {
+  display: flex;
+  overflow-x: scroll;
+  margin-top: 5rem;
+}
